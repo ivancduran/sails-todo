@@ -1,0 +1,142 @@
+li {
+  list-style: none;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
+.container {
+  background: #89bdd3;
+  overflow: hidden;
+  width: 360px;
+  margin: 0 auto;
+  color: #FFF;
+  border-radius: 4px;
+  box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+}
+
+.container .title {
+  background: #9ad3de;
+}
+/*6ed298*/
+
+.container h1 {
+  font-size: 20px;
+  font-weight: 600;
+  padding: 10px 15px;
+  text-transform: uppercase;
+}
+
+.go-task {
+  background: #fff;
+}
+
+.add {
+  float: right;
+  border-radius: 3px;
+  margin-right: 20px;
+  margin-top: 5px;
+  padding: 8px 10px;
+  background: #2980b9;
+}
+
+.add:hover {
+  background: rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+}
+
+.row {
+  color: #333;
+  background: #FFF;
+  /*width: 100%;*/
+  height: 40px;
+  padding-left: 10px;
+  line-height: 2.8;
+}
+
+.row:hover a {
+  width: 40px;
+  opacity: 1;
+}
+
+.row:nth-child(2n) {
+  background: #f7f7f7;
+}
+
+.row:hover {
+  background: #eee;
+}
+
+.remove, .completed {
+  float: right;
+  text-align: center;
+  height: 40px;
+  width: 0;
+  background: #6ed298;
+  color: #FFF;
+  opacity: 0;
+  text-decoration: none;
+  display: inline-block;
+  transition: all .2s ease;
+}
+
+.remove:hover, .completed:hover {
+  background: #27ae60;
+}
+
+.remove {
+  background: #e0837a;
+}
+
+.remove:hover {
+  background: #c0392b;
+}
+
+.done {
+  text-decoration: line-through;
+  color: #ccc;
+}
+
+.add-new {
+  cursor: pointer;
+  float: right;
+  height: 50px;
+  width: 40px;
+  text-align: center;
+  background: #6ed298;
+  color: #FFF;
+  line-height: 3.8;
+  transition: all .3s linear;
+}
+
+.add-new:hover {
+  background: #27ae60;
+}
+
+ul {
+  padding: 0px;
+  /*margin: 0px;*/
+}
+
+.new-task input {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  border-radius: 0;
+  background: #ecf0f1;
+  font-size: 14px;
+  font-family: 'Open Sans', sans-serif;
+  width: 300px;
+  padding: 5px 10px;
+  height: 40px;
+  border: none;
+  outline: none;
+}
+
+.finish {
+  text-decoration:line-through;
+}
